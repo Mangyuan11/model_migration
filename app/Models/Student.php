@@ -27,5 +27,11 @@ class Student extends Model
     {
         return $this->fname . ' ' . $this->lname;
     }
+
+    public function grade()
+     {
+       return $this->hasMany(SubjectGrade::class, 'student_id');
+    }
+
     //protected $guarded = [];
 }
