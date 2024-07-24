@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
 
         //Student::factory()->count(30)->create();
 
-        SubjectGrade::factory()->count(50)->create();
+        //SubjectGrade::factory()->count(50)->create();
 
 
         //User::factory()->create([
