@@ -96,6 +96,14 @@ class StudentController extends Controller
      */
     public function edit(string $id)
     {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, string $id)
+    {
         $student = Student::find($id);
         $student -> fname = $request ['fname'];
         $student -> lname = $request ['lname'];
@@ -107,14 +115,6 @@ class StudentController extends Controller
         $student -> zip = $request ['zip'];
         $student -> birthdate = $request ['bithdate'];
         $student -> save();
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
     }
 
     /**
