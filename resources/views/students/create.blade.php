@@ -16,38 +16,66 @@
         <div class="form-group mb-3">
             <label class="form-lable">First Name</label>
         <input type="text" name="fname" calss="form-control">
+        @error('email')
+                <div>{{ $message }}</div> 
+            @enderror
     </div>
     <div class="form-group mb-3">
     <label class="form-lable">Last Name</label>
         <input type="text" name="lname" calss="form-control">
+        @error('email')
+                <div>{{ $message }}</div> 
+            @enderror
+    </div>
     </div>
     <div class="form-group mb-3">
     <label class="form-lable">Email</label>
         <input type="text" name="email" calss="form-control">
+        @error('email')
+                <div>{{ $message }}</div> 
+            @enderror
     </div>
     <div class="form-group mb-3">
     <label class="form-lable">Phone number</label>
         <input type="text" name="phone" calss="form-control">
+        @error('phone')
+                <div>{{ $message }}</div> 
+            @enderror
     </div>
     <div class="form-group mb-3">
     <label class="form-lable">Address</label>
         <input type="text" name="address" calss="form-control">
+        @error('email')
+                <div>{{ $message }}</div> 
+            @enderror
     </div>
     <div class="form-group mb-3">
     <label class="form-lable">City</label>
         <input type="text" name="city" calss="form-control">
+        @error('email')
+                <div>{{ $message }}</div> 
+            @enderror
     </div>
     <div class="form-group mb-3">
     <label class="form-lable">Province</label>
         <input type="text" name="province" calss="form-control">
+        @error('email')
+                <div>{{ $message }}</div> 
+            @enderror
     </div>
     <div class="form-group mb-3">
     <label class="form-lable">Zip</label>
         <input type="text" name="zip" calss="form-control">
+        @error('email')
+                <div>{{ $message }}</div> 
+            @enderror
     </div>
     <div class="form-group mb-3">
     <label class="form-lable">BirthDate</label>
         <input type="date" name="birthdate" calss="form-control">
+        @error('email')
+                <div>{{ $message }}</div> 
+            @enderror
     </div>
     <div class="form-group mb-3">
         <button class="btn btn-primary">Save changes</button>
